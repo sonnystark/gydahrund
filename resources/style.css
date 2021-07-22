@@ -15,6 +15,15 @@ ul {
   list-style: none;
 }
 
+.hero-title, h1 {
+	font-size: 3.5rem;
+	color: #f4f4f4;
+}
+
+.hero-text, p {
+	font-size: 2em;
+	color: #f4f4f4;
+}
 
 h2,
 h3,
@@ -55,17 +64,42 @@ a {
 	color: #718daa;
 }
 
-
-
 .header {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid #a2a2a2;
 	background-color: #f4f4f4;
-	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.85);
 	border-radius: 5px;
 }
 
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to left, transparent, black), url("/assets/iceland_hero_img.jpg");
+    min-height: 35em;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero-button {
+	padding: 0.6rem;
+	background-color: blue;
+	color: cornsilk;
+	border: none;
+	border-radius: 5px;
+}
+
+	.hero-button:hover {
+		cursor: pointer;
+		background-color: crimson;
+		transition: ease-in-out;
+		transition-duration: 200ms;
+	}
 
 /* ================================= 
   Media Queries
