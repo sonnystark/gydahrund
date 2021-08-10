@@ -4,8 +4,9 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	line-height: 1.6;
+	line-height: 1.5;
 	margin: 0;
+	width: 100%;
 	min-height: 100vh;
 }
 
@@ -15,36 +16,38 @@ ul {
   list-style: none;
 }
 
-.hero-title, h1 {
-	font-size: 3.5rem;
-	color: #f4f4f4;
-}
-
-.hero-text, p {
-	font-size: 2em;
-	color: #f4f4f4;
-}
-
-h2,
-h3,
-a {
-	color: #34495e;
-}
-
 a {
 	text-decoration: none;
 }
 
+.container-1 h4 {
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	background-image: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(253,29,29,1) 50%, rgb(9, 124, 255) 100%); 
+	background-clip: text;
+	color: transparent;
+}
 
+main h1 {
+	text-align: center;
+}
+
+.container-2 h1 {
+	text-align: center;
+}
+
+.navigation {
+	display: flex;
+	justify-content: end;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: transparent;
+	position: sticky;
+}
 
 .logotype {
     height: 1.8rem;
 	margin: 1.2rem;
-}
-
-.main-nav {
-	margin-top: 5px;
-
 }
 
 .logo a,
@@ -57,48 +60,64 @@ a {
 
 .main-nav a {
 	color: #34495e;
-	font-size: .99em;
+	font-size: 1.1em;
 }
 
 .main-nav a:hover {
 	color: #718daa;
+	transform: scale(1.02);
 }
 
-.header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-	border: 1px solid #a2a2a2;
-	background-color: #f4f4f4;
-	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.85);
-	border-radius: 5px;
+.home-header {
+	padding: 100px 0 120px;
+	display: flex;
+    flex-wrap: nowrap;
 }
 
-.hero-image {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to left, transparent, black), url("/assets/iceland_hero_img.jpg");
-    min-height: 35em;
-    align-self: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    align-items: flex-start;
-    justify-content: center;
-}
+	.header-column-left {
+		display: flex;
+		justify-content: center;
+		width: 50%;
+		height: 30vw;
+	}
 
-.hero-button {
-	padding: 0.6rem;
-	background-color: blue;
-	color: cornsilk;
-	border: none;
-	border-radius: 5px;
-}
+	.header-column-right {
+		display: flex;
+		align-items: center;
+		justify-items: ;
+		width: 50%;
+		height: 30vw;
+		background-color: whitesmoke;
+		padding: 5px;
+	}
 
-	.hero-button:hover {
-		cursor: pointer;
-		background-color: crimson;
-		transition: ease-in-out;
-		transition-duration: 200ms;
+.container-1 {
+	display: grid;
+  	grid-template-columns: auto auto auto;
+  	padding: 10px;
+	}
+
+	.grid-item-col {
+		padding: 1.6rem;
+		font-size: 30px;
+		text-align: center;
+
+	}
+
+.container-2 {
+	display: grid;
+	grid-template-rows: auto auto auto;
+	padding: 10px;
+	
+	}
+	
+	.grid-item-row {
+		justify-self: center;
+		max-width: 70%;
+		padding: 1.6rem;
+		font-size: 30px;
+		text-align: left;
+	
 	}
 
 /* ================================= 
