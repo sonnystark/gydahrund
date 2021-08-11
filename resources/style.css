@@ -7,7 +7,7 @@
 :root {
 	--bg-color: rgb(253, 255, 246);
 	--main-text: #343434ff;
-	--second-text: #8d8e8eff;
+	--second-text: rgb(161, 161, 161);
 	--main-red: #ae1e2aff;
 	--main-blue: #2a46b7ff;
 }
@@ -115,6 +115,7 @@ button{
 	padding: 100px 0 240px;
 	display: flex;
     flex-wrap: nowrap;
+	margin-bottom: 5rem;
 }
 
 	.home-header::before {
@@ -143,6 +144,7 @@ button{
 	display: grid;
 	justify-content: center;
   	grid-template-columns: 500px 500px 500px;
+	margin-bottom: 8rem;
 	}
 
 	.grid-item-col {
@@ -151,6 +153,10 @@ button{
 		text-align: center;
 		justify-self: center;
 	}
+
+/* 	.grid-item-col button {
+		
+	} */
 
 .container-2 {
 	display: grid;
@@ -164,8 +170,78 @@ button{
 		padding: 1.4rem;
 		font-size: 1rem;
 		text-align: left;
-		border-bottom: solid 1px var(--second-text);
+		border-bottom: solid 1px var(--main-text);
 	}
+
+	.grid-item-row button {
+		/* position: relative; */
+		float: right;
+	}
+
+.main-footer {
+	display: flex;
+	height: 100px;
+	background-color: var(--second-text);
+}
+
+/* ================================= 
+  Contact
+==================================== */
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type=submit] {
+	background:#2e717f;
+	color:#fff;
+	border:none;
+	position:relative;
+	height:40px;
+	font-size:1.5em;
+	padding:0 1.5em;
+	cursor:pointer;
+	transition:800ms ease all;
+	outline:none;
+  }
+
+  input[type=submit]:hover {
+	background:var(--bg-color);
+	color:#2e717f;
+  }
+
+  input[type=submit]:before,input[type=submit]:after {
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:1px;
+	width:0;
+	background: #2e717f;
+	transition:400ms ease all;
+  }
+
+  input[type=submit]:hover:before,input[type=submit]:hover:after {
+	width:100%;
+	transition:800ms ease all;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container-contact {
+	margin: 100px auto 25px auto;
+	width: 50vw;
+	border-radius: 5px;
+	background-color: var(--second-text);
+	padding: 20px;
+  } 
 
 /* ================================= 
   Media Queries
