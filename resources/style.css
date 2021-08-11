@@ -48,7 +48,7 @@ button{
 	color:#fff;
 	border:none;
 	position:relative;
-	height:50px;
+	height:40px;
 	font-size:1em;
 	padding:0 1.5em;
 	cursor:pointer;
@@ -103,12 +103,12 @@ button{
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
-	color: #34495e;
-	font-size: 1rem;
+	color: var(--main-text);
+	font-size: 1.09rem;
 }
 
 .main-nav a:hover {
-	color: #718daa;
+	color: var(--second-text);
 }
 
 .home-header {
@@ -141,33 +141,30 @@ button{
 
 .container-1 {
 	display: grid;
-	justify-items: center;
-  	grid-template-columns: 1fr 1fr 1fr;
-  	padding: 10px;
+	justify-content: center;
+  	grid-template-columns: 500px 500px 500px;
 	}
 
 	.grid-item-col {
-		padding: 1.6rem;
+		padding: 1rem;
 		font-size: 1.1rem;
 		text-align: center;
-
+		justify-self: center;
 	}
 
 .container-2 {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
-	padding: 10px;
-	
+	padding: 2.5rem;
 	}
 	
 	.grid-item-row {
 		justify-self: center;
-		max-width: 70%;
-		padding: 1.6rem;
+		max-width: 60%;
+		padding: 1.4rem;
 		font-size: 1rem;
 		text-align: left;
 		border-bottom: solid 1px var(--second-text);
-	
 	}
 
 /* ================================= 
